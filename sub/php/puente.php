@@ -7,7 +7,7 @@ $maximo = 1700;
 while($intentos<$maximo)
 {
 	$tiempo_archivo = file_get_contents("./../../datos/tiempo_mensaje.txt");
-	if($tiempo_archivo>$tiempo_recibido){
+	if(+$tiempo_archivo>+$tiempo_recibido){
 		$existe = 1;
 		$intentos = $maximo;
 	}
